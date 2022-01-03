@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16.x
+      - name: Set ENV
+        run: export EXPO_STAGING=1
       - uses: expo/expo-github-action@v6
         with:
           expo-version: latest
@@ -36,4 +38,4 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Publish update
-        run: EXPO_STAGING=1 eas update --branch $(echo ${{ github.ref }} | sed 's|refs/heads/||') --message "${{ github.event.head_commit.message }}"
+        run: eas update --branch $(echo ${{ github.ref }} | sed 's|refs/heads/||') --message "${{ github.event.head_commit.message }}"
