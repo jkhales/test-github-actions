@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16.x
+      - name: Set Env variable
+        run: export EXPO_STAGING_TOKEN=1
       - uses: expo/expo-github-action@v6
         with:
           expo-version: latest
