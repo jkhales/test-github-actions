@@ -12,7 +12,7 @@
     },
     "updates": {
       "fallbackToCacheTimeout": 0,
-      "url": "http://127.0.0.1:3000/expo-updates/35bf508e-eed5-4271-910f-b4ebdfd8d8de"
+      "url": "https://u.expo.dev/e7a179d5-d955-4ab6-8cac-e81deba8d2ee"
     },
     "assetBundlePatterns": [
       "**/*"
